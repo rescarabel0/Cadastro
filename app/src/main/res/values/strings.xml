@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Cadastro</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="telefone">Telefone</string>
+    <string name="e_mail">E-mail</string>
+    <string name="phone_placeholder">Ex: 12-93456-7890</string>
+    <string name="checkbox_email_list">Ingressar na lista de e-mails?</string>
+    <string name="gender">Gênero</string>
+    <string name="gender_masc">Masculino</string>
+    <string name="gender_fem">Feminino</string>
+    <string name="gender_other">Outro</string>
+    <string name="cidade">Cidade</string>
+    <string name="UF">UF</string>
+    <string name="salvar">Salvar</string>
+    <string name="limpar">Limpar</string>
+    <string-array name="uf_array">
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+</resources>
