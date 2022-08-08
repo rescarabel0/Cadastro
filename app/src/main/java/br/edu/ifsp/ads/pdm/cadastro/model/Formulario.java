@@ -1,15 +1,17 @@
 package br.edu.ifsp.ads.pdm.cadastro.model;
 
-public class Formulario {
-    private String nomeCompleto;
-    private String telefone;
-    private String email;
-    private Boolean emailLista;
-    private int genero;
-    private String cidade;
-    private String uf;
+import androidx.annotation.NonNull;
 
-    public Formulario(String nomeCompleto, String telefone, String email, Boolean emailLista, int genero, String cidade, String uf) {
+public class Formulario {
+    private final String nomeCompleto;
+    private final String telefone;
+    private final String email;
+    private final Boolean emailLista;
+    private final Genero genero;
+    private final String cidade;
+    private final String uf;
+
+    public Formulario(String nomeCompleto, String telefone, String email, Boolean emailLista, Genero genero, String cidade, String uf) {
         this.nomeCompleto = nomeCompleto;
         this.telefone = telefone;
         this.email = email;
@@ -19,34 +21,17 @@ public class Formulario {
         this.uf = uf;
     }
 
-    public Formulario() {
-    }
-
-    public String getNomeCompleto() {
-        return nomeCompleto;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Boolean getEmailLista() {
-        return emailLista;
-    }
-
-    public int getGenero() {
-        return genero;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
-    public String getUf() {
-        return uf;
+    @NonNull
+    @Override
+    public String toString() {
+        return "{\n" +
+                "    \"nome_completo\": " + nomeCompleto + ",\n" +
+                "    \"telefone\": " + telefone + ",\n" +
+                "    \"email\": " + email + ",\n" +
+                "    \"email_lista\": " + emailLista + ",\n" +
+                "    \"gênero\": " + genero + ",\n" +
+                "    \"cidade\": " + cidade + ",\n" +
+                "    \"UF\": " + uf + "\n" +
+                "}";
     }
 }
